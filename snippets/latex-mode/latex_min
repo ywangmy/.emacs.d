@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: LaTex Min
+# type: snippet
+# key: min
+# condition: (texmathp)
+# --
+\min($0)

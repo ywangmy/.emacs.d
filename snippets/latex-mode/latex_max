@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: LaTex Max
+# type: snippet
+# key: max
+# condition: (texmathp)
+# --
+\max($0)
