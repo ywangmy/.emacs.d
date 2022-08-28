@@ -1,0 +1,8 @@
+https://spin.atomicobject.com/2016/05/27/write-emacs-package/
+
+For evaluating code to test it, you can use the built-in ~Lisp-interaction-mode~,
+which the ~*scratch*~ buffer usually has enabled by default. With the mode, you
+can paste Emacs Lisp code and then press ~C-x C-e~ to evaluate the code and see
+the results.
+
+

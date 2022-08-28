@@ -90,8 +90,8 @@
     "log" "\\log "
     "()" (lambda () (interactive) (yas-expand-snippet "($0)"))
     "sq" (lambda () (interactive) (yas-expand-snippet "\\sqrt{$0}"))
-    "sr" "^2 "
-    "cb" "^3 "
+    "sr" "^2"
+    "cb" "^3"
     "lim" (lambda () (interactive) (yas-expand-snippet "\\lim\\limits_{${1:n} \\to ${2:\\infty}} $0"))
     "lisu" (lambda () (interactive) (yas-expand-snippet "\\limsup\\limits_{${1:n} \\to ${2:\\infty}} $0"))
     "liin" (lambda () (interactive) (yas-expand-snippet "\\liminf\\limits_{${1:n} \\to ${2:\\infty}} $0"))
@@ -99,12 +99,13 @@
     "iint" (lambda () (interactive) (yas-expand-snippet "\\iint_{${1:R}} $0"))
     "tint" (lambda () (interactive) (yas-expand-snippet "\\iiint_{${1:D}} $0"))
     "oint" (lambda () (interactive) (yas-expand-snippet "\\oint_{${1:C}} $0"))
-    "sum" (lambda () (interactive) (yas-expand-snippet "\\sum\\limits_{${1:k=1}}^{${n}} $0"))
+    "sum" (lambda () (interactive) (yas-expand-snippet "\\sum_{${1:k=1}}^{${n}} $0"))
     "prod" (lambda () (interactive) (yas-expand-snippet "\\prod_{${1:k=1}}^{${n}} $0"))
     "sup" "\\sup"
     "inf" "\\inf"
     "curl" "\\nabla\\times "
     "dive" "\\nabla\\cdot "
+    "var" "\\sigma^2"
     ;; wrappers
     :cond #'texmathp
     "floor" (lambda () (interactive) (yas-expand-snippet "\\lfloor $0 \\rfloor"))
@@ -120,4 +121,5 @@
     :cond #'laas-object-on-left-condition
     )
   )
-(provide 'snippet-config)
+
+(provide 'init-snippet)

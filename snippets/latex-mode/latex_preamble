@@ -43,7 +43,8 @@
 \usepackage[dvipsnames]{xcolor}
 %% MATH EXTRA %%
 \usepackage{esvect}
-% 
+\usepackage{ulem}
+%
 \usepackage{siunitx}
 \usepackage{graphicx}
 \graphicspath{ {./img/} }
@@ -59,8 +60,8 @@
   commentstyle=\itshape\color{Green},
   frame=single
   %backgroundcolor=\color{black!5}, % set backgroundcolor
-} 
-% 
+}
+%
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
 \algnewcommand\algorithmicforeach{\textbf{for each}}

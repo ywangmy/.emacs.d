@@ -10,7 +10,9 @@
         cdlatex-math-modify
         cdlatex-math-symbol
         cdlatex-pbb
+        cdlatex-sub-superscript
         hungry-delete-backward
+        hungry-delete-forward
         mouse-set-region
         ))
 
