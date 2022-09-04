@@ -20,7 +20,7 @@
     (?H "\\colorboxd{SeaGreen}" "\\colorboxd{SeaGreen}" t nil nil)
     (?t "\\text" nil t nil nil)
     (?u nil "\\underline" t nil nil)
-    (?- "\\sout" "\\sout" t nil nil)
+    (?- "\\bar" "\\sout" t nil nil)
     )
    )
   :bind (:map cdlatex-mode-map
@@ -67,7 +67,7 @@
         )
   (add-to-list 'LaTeX-verbatim-environments "lstlisting")
   (setq preview-scale-function
-        (lambda () (* 1.4 (funcall (preview-scale-from-face)))))
+        (lambda () (* 1.0 (funcall (preview-scale-from-face)))))
   :custom
   (LaTeX-fill-excluded-macros '("hypersetup" "title" "author" "date"))
   (TeX-newline-function 'reindent-then-newline-and-indent)

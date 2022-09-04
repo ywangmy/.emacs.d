@@ -9,7 +9,7 @@
 \usepackage{courier}
 \usepackage[T1]{fontenc}
 %% LAYOUT %%
-\usepackage[a4paper, marginparwidth=4cm, left=6cm, right=2cm, top=2cm, bottom=2cm]{geometry} % To create a small page
+\usepackage[a4paper, marginparwidth=4cm, left=6cm, right=2cm, top=2cm, bottom=3cm]{geometry}
 \usepackage{marginnote}
 \reversemarginpar
 \usepackage{indentfirst}
@@ -31,6 +31,7 @@
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
 \newtheorem{method}{Method}[section]
+\newtheorem{example}{Example}[section]
 \theoremstyle{remark}
 \newtheorem{derivation}{Derivation}[section]
 \usepackage{mdframed} % after amsthm
