@@ -12,8 +12,8 @@
   (setq cdlatex-paired-parens nil)
   :custom
   (cdlatex-use-dollar-to-ensure-math nil)
-  (cdlatex-math-modify-prefix ??)
-  (cdlatex-math-symbol-prefix ?\;)
+  (cdlatex-math-modify-prefix "C-`")
+  (cdlatex-math-symbol-prefix ?`)
   (cdlatex-math-modify-alist '
    ((?c "\\textcolor{red}" "\\textcolor{SeaGreen}" t nil nil)
     (?h "\\colorbox{SeaGreen}" "\\colorbox{SeaGreen}" t nil nil)
@@ -21,6 +21,7 @@
     (?t "\\text" nil t nil nil)
     (?u nil "\\underline" t nil nil)
     (?- "\\bar" "\\sout" t nil nil)
+    (?\] "\\underbracket" nil t nil nil)
     )
    )
   :bind (:map cdlatex-mode-map
@@ -66,6 +67,11 @@
           )
         )
   (add-to-list 'LaTeX-verbatim-environments "lstlisting")
+  (add-to-list 'LaTeX-verbatim-environments "lstinputlisting")
+  (add-to-list 'LaTeX-verbatim-environments "lstinline")
+  ;;escape indentation for verbatim
+  (add-to-list 'LaTeX-indent-environment-list '("lstlisting" current-indentation))
+  (add-to-list 'LaTeX-indent-environment-list '("lstinputlisting" current-indentation))
   (setq preview-scale-function
         (lambda () (* 1.0 (funcall (preview-scale-from-face)))))
   :custom

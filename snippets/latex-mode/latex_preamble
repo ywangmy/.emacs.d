@@ -57,9 +57,11 @@
 \lstset { %
   language=[11]C++,
   basicstyle=\footnotesize\ttfamily,
-  keywordstyle=\ttfamily\bfseries\underbar,
+  keywordstyle=\ttfamily\bfseries\color{NavyBlue}\underbar,
   commentstyle=\itshape\color{Green},
-  frame=single
+  frame=single,
+  breaklines=true,
+  linewidth=0.9\linewidth,
   %backgroundcolor=\color{black!5}, % set backgroundcolor
 }
 %

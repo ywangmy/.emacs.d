@@ -7,12 +7,11 @@
   :init
   (setq laas-accent-snippets nil)
   (setq laas-basic-snippets nil)
-  
   ;;(setq laas-subscript-snippets nil)
   :custom
   (laas-enable-auto-space nil)
   :config
-  (aas-set-snippets 'laas-mode 
+  (aas-set-snippets 'laas-mode
     "ii" nil
     "ip1" nil
     "jj" nil
@@ -25,7 +24,7 @@
   (aas-set-snippets 'laas-mode
     ;; operators
     :cond #'texmathp
-    "pw" (lambda () (interactive) (yas-expand-snippet "^{$0}"))
+    "sp" (lambda () (interactive) (yas-expand-snippet "^{$0}"))
     "sb" (lambda () (interactive) (yas-expand-snippet "_{$0}"))
     "eqv" "\\equiv"
     "!=" "\\neq "
@@ -34,7 +33,7 @@
     ">>" "\\gg "
     "<<" "\\ll "
     "->" "\\to "
-    "+-" "\\pm " 
+    "+-" "\\pm "
     "-+" "\\mp "
     "<-" "\\gets "
     "=>" "\\implies "

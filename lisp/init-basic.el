@@ -1,11 +1,12 @@
 ;; windows
+(add-to-list 'default-frame-alist '(width . 86))
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (use-package paren
   :config
   (show-paren-mode 1)
   :custom-face
-  (show-paren-match ((t (:background "#2BCEB8" :foreground "#DCDCCC" :weight bold))))
+  (show-paren-match ((t (:background "#2BCEB8" :foreground "#006400" :weight bold))))
   )
 (set-fringe-mode '(0 . 0))
 (global-display-line-numbers-mode)
