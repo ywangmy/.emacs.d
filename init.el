@@ -91,7 +91,7 @@
 
 ;; snippets & YASnippet
 (require 'init-yasnippet)
-(require 'init-snippet)
+(require 'init-aas)
 
 ;; origami
 (require 'init-origami)

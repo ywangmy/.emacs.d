@@ -72,8 +72,10 @@
   ;;escape indentation for verbatim
   (add-to-list 'LaTeX-indent-environment-list '("lstlisting" current-indentation))
   (add-to-list 'LaTeX-indent-environment-list '("lstinputlisting" current-indentation))
+  
   (setq preview-scale-function
-        (lambda () (* 1.0 (funcall (preview-scale-from-face)))))
+        (lambda () (* 0.75 (funcall (preview-scale-from-face)))))
+  
   :custom
   (LaTeX-fill-excluded-macros '("hypersetup" "title" "author" "date"))
   (TeX-newline-function 'reindent-then-newline-and-indent)

@@ -26,7 +26,7 @@
     :cond #'texmathp
     "sp" (lambda () (interactive) (yas-expand-snippet "^{$0}"))
     "sb" (lambda () (interactive) (yas-expand-snippet "_{$0}"))
-    "eqv" "\\equiv"
+    "eqv" "\\equiv "
     "!=" "\\neq "
     "<=" "\\leq "
     ">=" "\\geq "
@@ -47,7 +47,7 @@
     "o+" "\\oplus "
     "o*" "\\otimes "
     "cc" "\\circ "
-    "s--" "\\setminus "
+    "s\\" "\\setminus "
     ;; symbols
     :cond #'texmathp
     "NN" "\\mathbb{N} "
@@ -56,7 +56,7 @@
     "QQ" "\\mathbb{Q} "
     "CC" "\\mathbb{C} "
     "FF" "\\mathcal{F}"
-    "TT" "\\intercal"
+    "TT" "^{\\intercal}"
     "..." "\\dots "
     "..v" "\\vdots "
     "..d" "\\ddots "
@@ -65,12 +65,6 @@
     "x*" "\\times "
     ;; Calculus
     "eva" (lambda () (interactive) (yas-expand-snippet "\\bigg\\rvert_{${1:a}}^{${2:b}}"))
-    ;; Union
-    "uu" "\\cup "
-    "UU" "\\bigcup "
-    "ui" "\\cap "
-    "Ui" "\\bigcap "
-    "dU" "\\coprod "
     ;; functions & symbols
     :cond #'texmathp
     "sin" "\\sin "
@@ -86,11 +80,12 @@
     "arcsec" "\\arcsec "
     "arccsc" "\\arccsc "
     "ln" "\\ln "
+    "lg" "\\lg "
     "log" "\\log "
-    "()" (lambda () (interactive) (yas-expand-snippet "($0)"))
     "sq" (lambda () (interactive) (yas-expand-snippet "\\sqrt{$0}"))
     "sr" "^2"
     "cb" "^3"
+    "inv" "^{-1}"
     "lim" (lambda () (interactive) (yas-expand-snippet "\\lim\\limits_{${1:n} \\to ${2:\\infty}} $0"))
     "lisu" (lambda () (interactive) (yas-expand-snippet "\\limsup\\limits_{${1:n} \\to ${2:\\infty}} $0"))
     "liin" (lambda () (interactive) (yas-expand-snippet "\\liminf\\limits_{${1:n} \\to ${2:\\infty}} $0"))
@@ -111,7 +106,6 @@
     "ceil" (lambda () (interactive) (yas-expand-snippet "\\lceil $0 \\rceil"))
     "set" (lambda () (interactive) (yas-expand-snippet "\\\\{ $0 \\\\}"))
     "abs" (lambda () (interactive) (yas-expand-snippet "\\left\\lvert $0 \\right\\rvert"))
-    "()" (lambda () (interactive) (yas-expand-snippet "($0)"))
     "lr(" (lambda () (interactive) (yas-expand-snippet "\\left( $0 \\right)"))
     "lr[" (lambda () (interactive) (yas-expand-snippet "\\left[ $0 \\right]"))
     "lr<" (lambda () (interactive) (yas-expand-snippet "\\langle $0 \\rangle"))
@@ -121,4 +115,4 @@
     )
   )
 
-(provide 'init-snippet)
+(provide 'init-aas)

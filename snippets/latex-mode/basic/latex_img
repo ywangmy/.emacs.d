@@ -5,7 +5,7 @@
 # --
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth, height=4cm, keepaspectratio]{${1:FILENAME}}
+  \includegraphics[draft=false, width=\textwidth, height=4cm, keepaspectratio]{${1:FILENAME}}
   \caption{${2:CAPTION} \label{fig:$1}}
 \end{figure}
 $0

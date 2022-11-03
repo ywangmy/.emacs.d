@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: LaTex Min
+# name: LaTeX cup
 # type: snippet
-# key: min
+# key: uu
 # condition: (texmathp)
 # --
-\min($0)
+\\cup $0
