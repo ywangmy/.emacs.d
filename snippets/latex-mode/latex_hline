@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: LaTex hline
-# type: snippet
-# key: hl
-# --
-\noindent\rule{\linewidth}{0.4pt}
-$0

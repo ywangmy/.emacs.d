@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# contributor: ywangmy
-# name: HTML Comment
-# type: snippet
-# key: cmt
-# --
-<!-- ${1:Comment} --> $0

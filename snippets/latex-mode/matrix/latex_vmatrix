@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: LaTex vmatrix
-# type: snippet
-# key: vmx
-# --
-\begin{vmatrix}
-$0
-\end{vmatrix}

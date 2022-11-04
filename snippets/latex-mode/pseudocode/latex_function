@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: LaTex Function(algorithm)
-# type: snippet
-# key: \func
-# --
-\Function{$1}{$2}
-$0
-\EndFunction

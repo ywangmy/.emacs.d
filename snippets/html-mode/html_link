@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# contributor: ywangmy
-# name: HTML Link
-# type: snippet
-# key: link
-# --
-<a href="${1:URL}">${2:Description}</a> $0

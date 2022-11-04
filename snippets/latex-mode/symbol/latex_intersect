@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: LaTeX cap
-# type: snippet
-# key: ii
-# condition: (texmathp)
-# --
-\\cap $0

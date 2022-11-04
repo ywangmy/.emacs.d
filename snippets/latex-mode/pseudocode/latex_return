@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: LaTex RETURN(algorithm)
-# type: snippet
-# key: \ret
-# --
-\Return 

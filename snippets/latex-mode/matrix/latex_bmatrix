@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: LaTex bmatrix
-# type: snippet
-# key: bmx
-# --
-\begin{bmatrix}
-$0
-\end{bmatrix}

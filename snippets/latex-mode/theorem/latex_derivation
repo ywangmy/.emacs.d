@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: Latex Derivation
-# type: snippet
-# key: deri
-# --
-\begin{derivation}
-  $0
-\end{derivation}

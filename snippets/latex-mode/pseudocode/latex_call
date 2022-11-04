@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: LaTex Call(algorithm)
-# type: snippet
-# key: \call
-# --
-\Call{$1}{$2}$0

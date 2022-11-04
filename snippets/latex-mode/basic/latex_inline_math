@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: LaTex Inline Math Mode
-# type: snippet
-# key: im
-# --
-\\($0\\)

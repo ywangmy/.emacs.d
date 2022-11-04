@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: Latex Verbatim
-# type: snippet
-# key: vbt
-# --
-\begin{verbatim}
-$0
-\end{verbatim}

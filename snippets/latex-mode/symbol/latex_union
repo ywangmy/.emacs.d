@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: LaTeX cup
-# type: snippet
-# key: uu
-# condition: (texmathp)
-# --
-\\cup $0

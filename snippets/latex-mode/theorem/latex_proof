@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: Latex Proof
-# type: snippet
-# key: pf
-# --
-\begin{proof}
-  $0
-\end{proof}

@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: LaTex FOR(algorithm)
-# type: snippet
-# key: \for
-# --
-\For{${1:START} to ${2:END}}
-$0
-\EndFor

@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: LaTex lstlisting
-# type: snippet
-# key: lst
-# --
-\begin{lstlisting}
-$0
-\end{lstlisting}

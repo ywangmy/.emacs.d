@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# contributor: ywangmy
-# name: HTML Navigation
-# type: snippet
-# key: nav
-# --
-<nav>
-  $0 |
-</nav>
