@@ -4,6 +4,7 @@ image-dired/
 backups/
 org-templates
 session*
+**/*~
 **/*~undo-tree~
 **/*#*
 .DS_Store

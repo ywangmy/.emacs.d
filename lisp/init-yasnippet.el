@@ -4,7 +4,7 @@
   :init
   (yas-global-mode 1)
   :custom
-  (yas-snippet-dirs '("~/.emacs.d/snippets"))
+  (yas-snippet-dirs '("~/.emacs.d/yasnippets"))
   (yas-prompt-functions '(yas-dropdown-prompt))
   (yas-wrap-around-region t)
   (yas-triggers-in-field t)
