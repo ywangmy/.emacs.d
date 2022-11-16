@@ -43,7 +43,6 @@
     "n=>" "\\nRightarrow "
     "AA" "\\forall "
     "EE" "\\exists "
-    "\\pr" "\\Pr "
     "o+" "\\oplus "
     "o*" "\\otimes "
     "cc" "\\circ "

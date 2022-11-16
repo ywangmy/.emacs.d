@@ -8,7 +8,9 @@
   :custom-face
   (show-paren-match ((t (:background "#2BCEB8" :foreground "#006400" :weight bold))))
   )
-(set-fringe-mode '(0 . 0))
+;; restore the default sizes
+(fringe-mode nil)
+;;(set-fringe-mode '(0 . 4))
 (global-display-line-numbers-mode)
 (global-auto-revert-mode t)
 (setq inhibit-startup-screen t)
@@ -23,6 +25,10 @@
 (display-battery-mode 1)
 (line-number-mode 0)
 (column-number-mode t) ;;
+
+;; font
+(set-face-attribute 'default nil :font "Monaco-13")
+
 ;; text
 (setq-default require-final-newline nil)
 (setq-default indent-tabs-mode nil)
@@ -42,5 +48,8 @@
       `(("." . ,(concat user-emacs-directory "backups"))))
 ;; key settings for macos
 (setq mac-command-modifier 'control)
+;; global key bindings
+(global-unset-key (kbd "C-<wheel-down>"))
+(global-unset-key (kbd "C-<wheel-up>"))
 
 (provide 'init-basic)

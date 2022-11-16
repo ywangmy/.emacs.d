@@ -23,10 +23,6 @@
 
 ;; init files
 (add-to-list 'load-path "~/.emacs.d/lisp/")
-
-;; frame bar
-;;(setq frame-title-format "emacs %f")
-
 ;; Load custom.el
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
@@ -36,7 +32,7 @@
 (require 'init-basic)
 
 ;; zenburn-theme
-(require 'init-zenburntheme)
+(require 'init-theme)
 
 ;; whitespace
 (require 'init-whitespace)
