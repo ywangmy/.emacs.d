@@ -3,6 +3,7 @@
   :ensure t
   :hook
   (markdown-mode . imenu-add-menubar-index)
+  (markdown-mode . turn-on-auto-fill)
   :custom
   (markdown-add-footnotes-to-imenu t)
   (markdown-coding-system 'utf-8)

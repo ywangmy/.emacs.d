@@ -15,11 +15,13 @@
   (cdlatex-math-modify-prefix "C-`")
   (cdlatex-math-symbol-prefix ?`)
   (cdlatex-math-modify-alist '
-   ((?c "\\textcolor{red}" "\\textcolor{SeaGreen}" t nil nil)
+   (;; Character Math Text t nil nil
+    (?c "\\textcolor{red}" "\\textcolor{SeaGreen}" t nil nil)
+    (?C "\\mathcal" "\\textsc" t nil nil)
     (?h "\\colorbox{SeaGreen}" "\\colorbox{SeaGreen}" t nil nil)
     (?H "\\colorboxd{SeaGreen}" "\\colorboxd{SeaGreen}" t nil nil)
     (?t "\\text" nil t nil nil)
-    (?u nil "\\underline" t nil nil)
+    (?u "\\unit" "\\underline" t nil nil)
     (?- "\\bar" "\\sout" t nil nil)
     (?\] "\\underbracket" nil t nil nil)
     )
