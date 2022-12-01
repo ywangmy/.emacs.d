@@ -41,12 +41,7 @@
     "var" "\\sigma^2"
     ;; wrappers
     :cond #'texmathp
-    "floor" (lambda () (interactive) (yas-expand-snippet "\\lfloor $0 \\rfloor"))
-    "ceil" (lambda () (interactive) (yas-expand-snippet "\\lceil $0 \\rceil"))
     "abs" (lambda () (interactive) (yas-expand-snippet "\\left\\lvert $0 \\right\\rvert"))
-    "lr(" (lambda () (interactive) (yas-expand-snippet "\\left( $0 \\right)"))
-    "lr[" (lambda () (interactive) (yas-expand-snippet "\\left[ $0 \\right]"))
-    "lr<" (lambda () (interactive) (yas-expand-snippet "\\langle $0 \\rangle"))
     "vv" (lambda () (interactive) (yas-expand-snippet "\\vv{$0}"))
     "hh" (lambda () (interactive) (yas-expand-snippet "\\hat{$0}"))
     :cond #'laas-object-on-left-condition

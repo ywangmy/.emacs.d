@@ -37,6 +37,8 @@
 (global-hl-line-mode t)
 (setq-default c-default-style "awk")
 (setq-default fill-column 80)
+;; replace highlighted text with what you type
+(delete-selection-mode 1)
 ;; default encoding
 (set-language-environment 'utf-8)
 (prefer-coding-system       'utf-8)

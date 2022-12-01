@@ -10,6 +10,8 @@
   (setq cdlatex-takeover-parenthesis nil)
   (setq cdlatex-takeover-dollar nil)
   (setq cdlatex-paired-parens nil)
+  :custom-face
+  (font-latex-sectioning-5-face ((t (:inherit nil :foreground "dark green"))))
   :custom
   (cdlatex-use-dollar-to-ensure-math nil)
   (cdlatex-math-modify-prefix "C-`")
@@ -71,10 +73,11 @@
   (add-to-list 'LaTeX-verbatim-environments "lstlisting")
   (add-to-list 'LaTeX-verbatim-environments "lstinputlisting")
   (add-to-list 'LaTeX-verbatim-environments "lstinline")
-  ;;escape indentation for verbatim
+  ;; escape indentation for verbatim
   (add-to-list 'LaTeX-indent-environment-list '("lstlisting" current-indentation))
   (add-to-list 'LaTeX-indent-environment-list '("lstinputlisting" current-indentation))
-  
+  (add-to-list 'LaTeX-indent-environment-list '("algorithm" current-indentation))
+  (add-to-list 'LaTeX-indent-environment-list '("algorithmic" current-indentation))  
   (setq preview-scale-function
         (lambda () (* 0.75 (funcall (preview-scale-from-face)))))
   
