@@ -24,6 +24,7 @@
     (?H "\\colorboxd{SeaGreen}" "\\colorboxd{SeaGreen}" t nil nil)
     (?t "\\text" nil t nil nil)
     (?u "\\unit" "\\underline" t nil nil)
+    (?z "\\zh" "\\zh" t nil nil)
     (?- "\\bar" "\\sout" t nil nil)
     (?\] "\\underbracket" nil t nil nil)
     )
@@ -47,6 +48,10 @@
               ("C-c C-a" . (lambda () (interactive) (let (TeX-save-query) (TeX-save-document (TeX-master-file))) (TeX-command-run-all nil)))
               )
   :config
+  ;; make AUCTeX aware of style files and multifile documents
+  (setq TeX-auto-save t)
+  (setq TeX-parse-self t)
+  (setq-default TeX-master nil)
   ;; add-to-list only AFTER package loaded
   (mapc (lambda (pair) (push pair tex--prettify-symbols-alist))
         '(("\\item" . ?•)

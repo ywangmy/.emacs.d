@@ -2,12 +2,8 @@
 (add-to-list 'default-frame-alist '(width . 86))
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
-(use-package paren
-  :config
-  (show-paren-mode 1)
-  :custom-face
-  (show-paren-match ((t (:background "#2BCEB8" :foreground "#006400" :weight bold))))
-  )
+(require 'init-paren)
+
 ;; restore the default sizes
 (fringe-mode nil)
 ;;(set-fringe-mode '(0 . 4))
@@ -48,10 +44,6 @@
 (setq-default buffer-file-coding-system 'utf-8-unix)
 (setq backup-directory-alist
       `(("." . ,(concat user-emacs-directory "backups"))))
-;; key settings for macos
-(setq mac-command-modifier 'control)
-;; global key bindings
-(global-unset-key (kbd "C-<wheel-down>"))
-(global-unset-key (kbd "C-<wheel-up>"))
-
+;; Keys
+(require 'init-keys)
 (provide 'init-basic)

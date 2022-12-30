@@ -37,6 +37,9 @@
 ;; whitespace
 (require 'init-whitespace)
 
+;; ispell (hunspell)
+(require 'init-ispell)
+
 ;; hungry-delete
 (require 'init-hungrydelete)
 
@@ -49,11 +52,11 @@
 ;; multiple-cursors
 (require 'init-multiplecursors)
 
+;; emacs-helm
+(require 'init-helm)
+
 ;; which-key-mode
 (require 'init-whichkey)
-
-;; smartparens
-(require 'init-smartparens)
 
 ;; undo-tree
 (require 'init-undotree)
