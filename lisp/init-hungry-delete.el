@@ -6,4 +6,4 @@
   (hungry-delete-join-reluctantly t)
   )
 
-(provide 'init-hungrydelete)
+(provide 'init-hungry-delete)

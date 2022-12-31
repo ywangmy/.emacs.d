@@ -6,4 +6,4 @@
   (setq sml/show-eol t)
   )
 
-(provide 'init-smartmodeline)
+(provide 'init-smart-mode-line)

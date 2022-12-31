@@ -4,4 +4,4 @@
   (which-key-mode)
   )
 
-(provide 'init-whichkey)
+(provide 'init-which-key)

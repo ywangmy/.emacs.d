@@ -4,4 +4,4 @@
   (smooth-scrolling-mode 1)
   )
 
-(provide 'init-smoothscrolling)
+(provide 'init-smooth-scrolling)

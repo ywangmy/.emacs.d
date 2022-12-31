@@ -31,38 +31,46 @@
 ;; Top-level settings
 (require 'init-basic)
 
-;; zenburn-theme
+;; theme
 (require 'init-theme)
 
 ;; whitespace
 (require 'init-whitespace)
 
-;; ispell (hunspell)
-(require 'init-ispell)
-
 ;; hungry-delete
-(require 'init-hungrydelete)
+(require 'init-hungry-delete)
 
 ;; smooth-scrolling
-(require 'init-smoothscrolling)
+(require 'init-smooth-scrolling)
 
 ;; ace-window
-(require 'init-acewindow)
+(require 'init-ace-window)
 
 ;; multiple-cursors
-(require 'init-multiplecursors)
+(require 'init-multiple-cursors)
+
+;; undo-tree
+(require 'init-undo-tree)
 
 ;; emacs-helm
 (require 'init-helm)
 
-;; which-key-mode
-(require 'init-whichkey)
+;; company-mode
+(require 'init-company)
 
-;; undo-tree
-(require 'init-undotree)
+;; prettify-symbols
+(setq prettify-symbols-unprettify-at-point 'right-edge)
+
+;; snippets & YASnippet
+(require 'init-yasnippet)
+(require 'init-yasupp)
+(require 'init-aas)
+
+;; which-key-mode
+(require 'init-which-key)
 
 ;; smart-mode-line
-(require 'init-smartmodeline)
+(require 'init-smart-mode-line)
 
 ;; neotree
 (require 'init-neotree)
@@ -70,11 +78,11 @@
 ;; imenu & imenu-list
 (require 'init-imenu-list)
 
+;; origami
+(require 'init-origami)
+
 ;; yaml-mode
 (require 'init-yaml)
-
-;; prettify-symbols
-(setq prettify-symbols-unprettify-at-point 'right-edge)
 
 ;; reftex, cdlatex, latex
 (require 'init-latex)
@@ -82,20 +90,13 @@
 ;; markdown-mode
 (require 'init-markdown)
 
+;; org-mode
+(require 'init-org)
+
 ;; flycheck
 (require 'init-flycheck)
 
-;; company-mode
-(require 'init-company)
-
-;; snippets & YASnippet
-(require 'init-yasnippet)
-(require 'init-aas)
-
-;; origami
-(require 'init-origami)
-
-;; org-mode
-(require 'init-org)
+;; ispell (hunspell)
+(require 'init-ispell)
 
 (put 'set-goal-column 'disabled nil)

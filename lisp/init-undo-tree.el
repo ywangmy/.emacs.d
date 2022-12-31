@@ -4,4 +4,4 @@
   (global-undo-tree-mode)
   )
 
-(provide 'init-undotree)
+(provide 'init-undo-tree)

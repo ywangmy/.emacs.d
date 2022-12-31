@@ -1,0 +1,45 @@
+* Configurations
+
+** Dependecies and Overview
+
+(~.el~ omitted)
+
+- init
+  - init-basic
+    - init-paren
+    - init-keys
+  - Display
+    - init-theme
+    - init-whitespace
+  - Editting, navigation:
+    - init-hungry-delete
+    - init-smooth-scrolling (bugs)
+    - init-ace-window: [[https://github.com/abo-abo/ace-window][ace-window]], fast window switching.
+    - [TODO] init-multiple-cursors:
+      [[https://github.com/magnars/multiple-cursors.el][multiple-cursors]]
+    - init-undo-tree: [[https://elpa.gnu.org/packages/undo-tree.html][undo-tree]], tree-view of editting and undo histroy.
+  - Completions, snippests:
+    - [TODO] init-helm: [[https://github.com/emacs-helm/helm][helm]], completions
+      and selections, mini buffer.
+    - init-company
+    - init-yasnippet
+    - init-yasupp: [[https://github.com/ywangmy/yasupp.el][yasupp]], yasnippet supplementary
+    - init-aas
+  - Layout:
+    - init-which-key: [[https://github.com/justbur/emacs-which-key][which-key]],
+      key bindings reminder, mini buffer.
+    - init-smart-mode-line:
+      [[https://github.com/Malabarba/smart-mode-line][smart-mode-line]],
+      space-efficient mode line.
+    - init-neotree: [[https://github.com/jaypei/emacs-neotree][neotree]],
+      tree-view directory structure.
+    - init-imenu-list: [[https://github.com/bmag/imenu-list][imenu-list]],
+      collocated with major modes to display code structure.
+  - Major modes:
+    - init-yaml
+    - init-latex
+    - init-markdown
+    - init-org
+  - Syntax checking, spell checking
+    - init-flycheck
+    - [TODO] init-ispell

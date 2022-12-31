@@ -1,10 +1,5 @@
 ;; YASnippet
 
-(use-package yasupp
-  :hook
-  (yas-minor-mode . yasp-minor-mode)
-  )
-
 (use-package yasnippet
   :ensure t
   :init

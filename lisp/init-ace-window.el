@@ -8,4 +8,4 @@
   (setq aw-scope 'frame)
   )
 
-(provide 'init-acewindow)
+(provide 'init-ace-window)
